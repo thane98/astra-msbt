@@ -6,8 +6,6 @@ use clap::{Parser, Subcommand};
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
-    #[arg(short, long)]
-    names: Option<PathBuf>,
     #[command(subcommand)]
     command: Command,
 }
